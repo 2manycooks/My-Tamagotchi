@@ -1,0 +1,154 @@
+
+
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYr_ssVbif4qHdjDXqeTAdJnl4DfwU5kjh7Q&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+}
+
+#attribute-area {
+    position: absolute;
+    top: 0px; /* The font made the section's top positioning a little odd, so i had to add some negative top spacing. */
+    right: 15px;
+    font-family: 'Nerko One', cursive;
+    font-size: 35px;
+    font-style: bold;
+}
+
+#attribute-area li {
+    list-style-type: none; /* get rid of those pesky but loveable bullet points */
+}
+
+#button-area {
+    position: absolute;
+    top: 50;
+    left: 10px;
+}
+
+#button-area button {
+    all: unset; /* once again, thank you to CSS tricks for this one, via: css-tricks.com/overriding-default-button-styles/ */
+    background-position: center;
+    right: 15px;
+    text-align: center;
+    display: block;
+    margin: 15px 10px;
+    height: 80px;
+    width: 120px;
+    font-family: 'Nerko One', cursive;
+    font-size: 30px;
+    color: whitesmoke;
+    background-image: url("data:image/jpeg;base64,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");
+    z-index: 5;
+}
+
+#pet-area {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    bottom: 20px;
+    height: 150px;
+    z-index: 1;
+}
+
+#pet {
+    display: block;
+    z-index: 2;
+    height: 180px;
+    width: 100px;
+    margin: 0 auto;
+    bottom: 30px;
+}
+
+#lights-off {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+    clip-path: polygon(0% 0%, 0% 100%, 2% 100%, 2% 33%, 9% 33%, 10% 43%, 2% 43%, 1% 100%, 100% 100%, 100% 0%);
+}
+
+#name-area {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+}
+
+#name {
+    font-family: 'Nerko One', cursive;
+    font-size: 66px;
+    margin-top: 10px;
+}
+
+#mute-button {
+    position: relative;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+#unmute-button {
+    position: relative;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+/* next part is for the modal I've added as an icebox goal. Thanks to w3 for the comprehensive outline for this!
+    https://www.w3schools.com/howto/howto_css_modals.asp
+*/
+
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    font-family: 'Nerko One', cursive;
+    font-size: 20px;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #select-text {
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 5px solid black;
+  }
+
+  .pet-card {
+      display: inline-block;
+      margin: 0px 40px;
+  }

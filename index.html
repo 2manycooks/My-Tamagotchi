@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STLYES -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    
+    <!-- VENDOR SCRIPTS -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/3284e8bee0.js" crossorigin="anonymous"></script>
+
+    <!-- PERSONAL SCRIPTS -->
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/app.js" defer></script>
+
+    <audio id="bgm" volume= "0.1" source src="./audio/Horse-Steppin.mp3">
+    </audio>
+
+    <audio src="./audio/Pacman-death-sound/Pacman-death-sound.mp3" id="death-sound"></audio>
+
+</head>
+
+<body>
+    <header id='name-area'>
+        <input id='name-input' type="text" placeholder="name me!">
+    </header>
+
+    <div id="lights-off"></div> <!-- This div encompasses the page, and its opacity is toggled with a button. -->
+
+    <div id="button-area">
+        <button id='feed'>Feed</button>
+        <button id="play">Play</button>
+        <button id="lights">Lights</button>
+    </div>
+
+    <section id='attribute-area'>
+        <ul>
+            <li class='attribute' id='hunger'>Hunger: 10</li>
+            <li class='attribute' id='boredom'>Boredom: 10</li>
+            <li class='attribute' id='fatigue'>Fatigue: 10</li>
+        </ul>
+    </section>
+
+    <div id="pet-area">
+        <img id='pet' class='first-form' src="" alt="pet-image-here">
+    </div>
+    
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <p id='select-text'>Select A Pet!</p>
+
+      <div class="pet-card" id="borbo">
+          <img src="./images/Pets/borbo-purple.png">
+          <p id="borbo-card-name">Borbo</p>
+      </div>
+
+      <div class="pet-card" id="glimer">
+          <img src="./images/Pets/glimer-purple.png">
+          <p id="glimer-card-name">Glimer</p>
+      </div>
+
+      <div class="pet-card" id="kroak">
+        <img src="./images/Pets/kroak-red.png">
+        <p id="glimer-card-name">Kroak</p>
+    </div>
+
+    <div class="pet-card" id="myko">
+        <img src="./images/Pets/myko-purple.png">
+        <p id="glimer-card-name">Myko</p>
+    </div>
+
+
+    </div>
+  
+  </div>
+    
+</body>
+
+</html>
