@@ -97,6 +97,7 @@ const toggleLights = function toggleLights() {
 }
 
 $("#lights").on("click", toggleLights);
+$("#lights-off").on("")
 
 
 /* The World Timer */
@@ -299,6 +300,54 @@ $("#myko").click(function() {
     $("#button-area").toggle();
     tama.image = "./images/Pets/myko-purple.png";
     tama.evolutionOne = "./images/Pets/myko-purple-2.png";
+    $("#pet").attr("src", `${tama.image}`);
+    $("#pet-area").toggle();
+    setTimer();
+    $("#myModal").toggle();
+})
+
+$("#hunker").click(function() {
+    $("#attribute-area").toggle();
+    $("#name-area").toggle();
+    $("#button-area").toggle();
+    tama.image = "./images/Pets/hunker-purple.png";
+    tama.evolutionOne = "./images/Pets/hunker-purple-2.png";
+    $("#pet").attr("src", `${tama.image}`);
+    $("#pet-area").toggle();
+    setTimer();
+    $("#myModal").toggle();
+})
+
+$("#tsuudo").click(function() {
+    $("#attribute-area").toggle();
+    $("#name-area").toggle();
+    $("#button-area").toggle();
+    tama.image = "./images/Pets/tsuudo-blue.png";
+    tama.evolutionOne = "./images/Pets/tsuudo-blue-2.png";
+    $("#pet").attr("src", `${tama.image}`);
+    $("#pet-area").toggle();
+    setTimer();
+    $("#myModal").toggle();
+})
+
+$("#omocha").click(function() {
+    $("#attribute-area").toggle();
+    $("#name-area").toggle();
+    $("#button-area").toggle();
+    tama.image = "./images/Pets/omocha-green.png";
+    tama.evolutionOne = "./images/Pets/omocha-green-2.png";
+    $("#pet").attr("src", `${tama.image}`);
+    $("#pet-area").toggle();
+    setTimer();
+    $("#myModal").toggle();
+})
+
+$("#gabe-jr").click(function() {
+    $("#attribute-area").toggle();
+    $("#name-area").toggle();
+    $("#button-area").toggle();
+    tama.image = "./images/Pets/gabe-jr-blue.png";
+    tama.evolutionOne = "./images/Pets/gabe-jr-blue-2.png";
     $("#pet").attr("src", `${tama.image}`);
     $("#pet-area").toggle();
     setTimer();
