@@ -97,7 +97,7 @@ const toggleLights = function toggleLights() {
 }
 
 $("#lights").on("click", toggleLights);
-$("#lights-off").on("")
+$("#lights-off").dblclick(toggleLights); // failsafe for broken lights-off, since it fucks up on different screen sizes!
 
 
 /* The World Timer */
@@ -255,6 +255,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
 
 /* PET CHOICE BUTTONS */
 
