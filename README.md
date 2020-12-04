@@ -92,3 +92,7 @@ made a HUGE UI change that fortunately worked out. The game now begins with a pr
 
 ![Third-Outline-Opening-Screen](./images/page-version-3a.png)
 ![Third-Outline-Pet-Selected](./images/page-version-3b.png)
+
+# Day 5 (Friday)
+
+Final finishing touches before submission and presentation! I really wanted to add some extra features, but I didn't want to break things even more. The main highlight of this last bit of time was being able to fix the whole issue with the "lights off" div covering the buttons. The solution was actually really simple! I tried fixing it by giving the buttons a higher z index than the lights off div, but for some reason that didn't work, and I just kind of gave up. However, after a few days of mulling it over, I realized I could probably move that property up to the parent div holding the buttons inside of it. Doing this totally fixed the problem! I still have the clip and a failsafe commented out in my code. The failsafe is a simple event listener that untoggles the div on double-click. no issues with that, so if all else fails, I can still implement that.

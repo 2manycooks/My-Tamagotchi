@@ -97,8 +97,8 @@ const toggleLights = function toggleLights() {
 }
 
 $("#lights").on("click", toggleLights);
-$("#lights-off").dblclick(toggleLights); // failsafe for broken lights-off, since it fucks up on different screen sizes!
-
+/* $("#lights-off").dblclick(toggleLights);  // failsafe for broken lights-off, since it fucks up on different screen sizes!
+ */
 
 /* The World Timer */
 
